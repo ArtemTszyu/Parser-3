@@ -7,7 +7,7 @@ int main ()
 {
 string l;
 double x,y,z;
-char m,n;
+char m,n='a';
 
 getline( cin, l);
 istringstream stream(l);
@@ -28,11 +28,11 @@ if (m=='-')
 	n='-';
 	z=y;
 }
-if ((m=='*')&&(n=='*')) 
+if ((m=='*')&&(n=='a')) 
 {
 	x=x*y;	
 }
-if ((m=='/')&&(n=='*')) 
+if ((m=='/')&&(n=='a')) 
 {
 	if (y==0 && x==0) {cout<<"nan"; return -1;}
        else if (x!=0 && y==0) {cout<<"inf"; return -1;}
