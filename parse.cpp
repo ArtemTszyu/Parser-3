@@ -64,7 +64,17 @@ if ((m=='/')&&(n=='+'))
     	x=x+z;
     	n='+';
 }
-
+if ((m=='/')&&(n=='-'))
+{
+	x=x+z;
+		
+		if (z==0 && y==0) {cout<<"nan"; return -1;}
+    	else if (z!=0 && y==0) {cout<<"inf"; return -1;}
+    	else
+    	z=z/y;
+    	x=x-z;
+    	n='-';
+}
 }
 cout<<x;
 }
